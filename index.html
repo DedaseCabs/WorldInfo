@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>World Info</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="images/icon.png">
+        <style>
+            body {
+                background-image: url(images/background.jpg); 
+            }       
+            .map {
+                padding-bottom: 20px;
+                display: flex;
+                justify-content: center;
+                margin-right: 20px;
+                float: none;
+            }
+            .map iframe {
+                height: 540px;
+                background-color: #22a19b;
+                padding: 10px;
+                width: 75%;
+            }
+            nav img {
+                margin: 10px 20.5%;
+            }
+            article p {
+                padding: 20px;
+                width: 90%;
+                margin: 20px auto;
+                border-radius: 50px;
+                text-align: center;
+                margin: 20px auto;
+                background-color: #8bb996;
+            }
+            article p:hover{ 
+                transform: translate(0px);
+            }
+            .top3 {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                background-color: #8bb996;
+            }
+            h1 {
+                display: flex;
+                width: 25%;
+                justify-content: center;
+                align-items: center;
+            }
+            ul {
+                text-align: center;
+                width: 100%;
+                display: flex;
+            }
+            li {
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                width: 100%;
+            }
+            li a {
+                text-decoration: none;
+                flex: 1;
+                margin: 0px 10px;
+                color: black;
+                text-align: center;
+                background-color: #ace7ba;
+                border: 3px solid #47574b;
+                border-radius: 25px;
+                padding: 10px 30%;
+            }
+            li a:hover {
+                background-color: #ccffd8;
+                transition: background-color 0.2s ease-in-out;
+            }
+            @media screen and (max-width: 900px) {
+                nav img {
+                    margin: 10px 17%;
+                }
+                li a {
+                    padding: 10px 24%;
+                }
+            }
+            @media screen and (max-width: 700px) {
+                nav img {
+                    margin: 10px 15%;
+                }
+                li a {
+                    padding: 10px 9%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="htdocs/search.html"> Search </a>
+            <img src="images/World-Info.png">
+        </nav>   
+        <section>
+            <article>
+                <p>
+                    A very convenient website to find out information about any country! To start, you may look through this map, or search for a country in the search page.
+                </p>       
+                <div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d64143275.48082854!2d3.6858038061314127!3d11.113761689756927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1697692876022!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>  
+                </div>
+            </article> 
+        </section>  
+        <aside>
+            <div class="top3">
+                <h1>Top 3 countries:</h1>
+                <ul>
+                    <li><a href="htdocs/Australia.html">Australia</a></li>
+                    <li><a href="htdocs/Indonesia.html">Indonesia</a></li>
+                    <li><a href="htdocs/Philippines.html">Philippines</a></li>
+                </ul>
+            </div>
+        </aside>
+        <footer class="footer">
+            <div class="x">
+                <a href="https://twitter.com/varierste">
+                    <span class="tolink"></span>
+                </a>
+            </div>
+            <div class="fb">
+                <a href="https://www.facebook.com/Philip.Marco.Dedase">
+                    <span class="tolink"></span>
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
